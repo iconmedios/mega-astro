@@ -1,0 +1,147 @@
+<section id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- About Video -->
+            <div class=" col-sm-12 col-md-6 img-sec mt-5 mt-md-0 wow fadeIn order-2 order-md-1" data-wow-duration="1.5s" data-wow-delay=".5s">
+                <div class="red_rectangle"></div>
+                <div class="about_img position-relative">
+                    <img src="creative-designer/images/about-img.jpg" alt="About Image">
+                    <a data-fancybox="video" href="https://www.youtube.com/watch?v=7e90gBu4pas" class="video-play-button position-absolute">
+                        <i class="las la-play"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Content -->
+            <div class="col-sm-12 col-md-6 pl-md-5 wow fadeInRight order-1 order-md-1" data-wow-duration="1.5s" data-wow-delay=".5s">
+                <div class="about-heading">
+                    <p class="text-small alt-font text-red">My Success Story</p>
+                    <h1 class="heading margin_heading main-font">How I Started</h1>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu. Lorem ipsum dolor sit amet.</p>
+                    <p class="info my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu.</p>
+                    <a href="#" class="scroll btn btn-medium btn-rounded btn-trans-white mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* ===================================
+      About Section
+====================================== */
+
+.img-sec{
+    position: relative;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.about_img {
+    padding: 2%;
+    background-color: #f6f6f6;
+    position: relative;
+}
+
+.about_img img{
+    height: 100%;
+    width: 100%;
+}
+
+.red_rectangle{
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    bottom: 2%;
+    left: 54%;
+    transform: translateX(-50%);
+    background-color: #d43030;
+}
+
+.about-heading .text-small{
+    font-size: 20px;
+}
+
+.about-heading .heading{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.about-heading .info {
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.4;
+    opacity: .6;
+    font-family: Roboto, sans-serif;
+}
+
+.margin_heading{
+    margin: 25px 0;
+}
+
+.video-play-button {
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    -webkit-border-radius: 50px;
+    border: 3px solid #18191d;
+    border-radius: 50px;
+    line-height: 77px;
+    text-align: center;
+    color: #ffffff;
+    background: #18191d;
+    -webkit-box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    z-index: 1;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.video-play-button:hover {
+    -o-animation: ripple 1.3s infinite;
+    -webkit-animation: ripple 1.3s infinite;
+    animation: ripple 1.3s infinite;
+}
+
+.video-play-button.slider-play-button {
+    margin: 10px;
+    -webkit-transform: translate(0%,0%);
+    -ms-transform: translate(0%,0%);
+    -o-transform: translate(0%,0%);
+    transform: translate(0%,0%);
+}
+
+.video-play-button i {
+    font-size: 30px;
+}
+
+@-webkit-keyframes ripple {
+    70% {
+
+        -webkit-box-shadow: 0 0 0 20px rgba(0, 159, 153, 0);
+        box-shadow: 0 0 0 20px rgba(0, 159, 153, 0);
+    }
+    to {
+
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 159, 153, 0);
+        box-shadow: 0 0 0 0 rgba(0, 159, 153, 0);
+    }
+}
+
+@keyframes ripple {
+    70% {
+
+        -webkit-box-shadow: 0 0 0 20px rgba(0, 159, 153, 0);
+        box-shadow: 0 0 0 20px rgba(0, 159, 153, 0);
+    }
+    to {
+
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 159, 153, 0);
+        box-shadow: 0 0 0 0 rgba(0, 159, 153, 0);
+    }
+}
+</style>

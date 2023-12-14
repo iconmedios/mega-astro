@@ -1,0 +1,516 @@
+/* ===================================
+    About
+====================================== */
+
+/*
+    Theme Name: MegaOne
+    Theme URI:
+    Author: Themes Industry
+    Author URI:
+    Description: One Page Parallax Template
+    Tags: one page, multipurpose, parallax, creative, html5
+ */
+
+/* ===================================
+    Table of Content
+====================================== */
+
+/*  - Fonts
+    - General
+    - Header And Nav-Bar
+    - Banner
+    - About
+    - Stats
+    - Testimonials
+    - Client
+    - Contact Us
+    - Scroll Top
+    - Loader
+    - Media Queries   */
+
+
+
+/* ===================================
+    General
+====================================== */
+
+
+
+
+
+/* ===================================
+   Banner Section
+====================================== */
+
+
+
+
+
+
+
+
+
+
+/* ===================================
+   Scroll Top
+====================================== */
+
+.go-top {
+    position: fixed;
+    cursor: pointer;
+    bottom: 15px;
+    right: 15px;
+    color: #202020;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 4;
+    width: 40px;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .9s;
+    -o-transition: .9s;
+    transition: .9s;
+    -webkit-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    transform: translateY(150px);
+}
+
+.go-top.active {
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.go-top i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.go-top i:last-child {
+    opacity: 0;
+    visibility: hidden;
+    top: 60%;
+}
+
+.go-top::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #202020;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+
+.go-top:hover, .go-top:focus {
+    color: #ffffff;
+}
+
+.go-top:hover::before, .go-top:focus::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.go-top:hover i:first-child, .go-top:focus i:first-child {
+    opacity: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+.go-top:hover i:last-child, .go-top:focus i:last-child {
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+}
+
+/* ===================================
+   Loader
+====================================== */
+
+.loader-bg {
+    position: fixed;
+    z-index: 99999;
+    background-color: #202020;
+    width: 100%;
+    height: 100%;
+}
+
+.svg-loader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-bg svg {
+    width: 200px;
+}
+
+circle {
+    fill: none;
+    stroke: #d43030;
+    stroke-width: 10px;
+    animation: circle-animation 3s infinite;
+    transform-origin: center center;
+}
+
+@keyframes circle-animation {
+    0%, 20%, 100% {
+        stroke-dasharray: 0.1;
+        transform: rotate(0);
+    }
+    10% {
+        stroke-dasharray: 0.05;
+    }
+    70% {
+        stroke-dasharray: 50;
+        transform: rotate(60deg);
+    }
+}
+
+/* ===================================
+    Media Query
+====================================== */
+
+@media (max-width: 1600px) and (min-width: 1300px) {
+    .area-heading h1 {
+        font-size: 60px;
+    }
+    .slider-image img {
+        top: -75px;
+    }
+    }
+
+@media (max-width: 1280px) and (min-width: 992px) {
+
+    /* Banner */
+    .slider-area {
+        height: 60vh;
+    }
+    .area-heading h1 {
+        font-size: 38px;
+    }
+    .area-heading p {
+        font-size: 18px;
+    }
+    .slider-image img {
+        top: -65px;
+    }
+
+    /* Portfolio */
+    .project-sec .row {
+        margin-left: 60px!important;
+    }
+
+    /* Clients */
+    .clients-area .heading {
+        font-size: 42px;
+    }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+
+    /* Side Menu */
+    .side-menu {
+        width: 60%;
+    }
+    .side-footer p{
+        font-size: 16px;
+    }
+    .side-menu .btn-close {
+        right: 15px;
+    }
+    .sidemenu_btn {
+        right: 15px;
+    }
+
+    /* Banner */
+    .area-heading h1 {
+        font-size: 38px;
+    }
+    .area-heading p {
+        font-size: 16px;
+    }
+    .slider-area {
+        display: block;
+        height: auto;
+    }
+    .author-skills {
+        position: relative;
+    }
+    .slider-area .content-margin {
+        margin-top: 150px;
+        margin-bottom: 0;
+    }
+    .slider-image img {
+        top: 80px;
+        width: 120%;
+        max-width: 120%;
+    }
+    .author-skills .small-heading {
+        font-size: 22px;
+    }
+    .author-skills .small-text {
+        font-size: 15px;
+    }
+
+    /* About */
+    .about-heading .heading {
+        font-size: 38px;
+    }
+    .about-heading .info {
+        font-size: 15px;
+    }
+
+    /* Stats */
+    .stats-sec .circular-wrap>div {
+        padding-bottom: 90px;
+    }
+    .stats-sec .circular-wrap>div:nth-child(3) {
+        padding-bottom: 0;
+    }
+
+    /* Portfolio */
+    .project-sec .project-area .project-img {
+        height: auto;
+    }
+    .project-sec .project-area .project-detail {
+        position: relative;
+        transform: translateY(0%);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .project-sec .project-area .project-detail .project-heading {
+        font-size: 24px;
+    }
+    .project-sec .project-links-right a i, .project-sec .project-links-left a i {
+        display: none;
+    }
+
+    /* Testimonials */
+    .testimonial_img {
+        left: 45%;
+    }
+    #testimonials .text1 {
+        left: 42%;
+    }
+    .quote_box {
+        left: 45%;
+    }
+
+    /* Clients */
+    .clients-area .heading {
+        font-size: 38px;
+    }
+    .clients-area .sub-para {
+        font-size: 15px;
+    }
+
+    /* Contact */
+    .contact-sec .user-img {
+        height: 130px;
+        width: 130px;
+    }
+    .contact-sec .user-name {
+        font-size: 18px;
+    }
+    .contact-sec .user-designation {
+        font-size: 15px;
+    }
+    .contact-form .btn.btn-medium {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    body {
+        text-align: center;
+    }
+    section {
+        padding: 6rem 0;
+    }
+    .btn.btn-medium {
+        font-size: 14px;
+        padding: 14px 40px;
+    }
+    .loader-bg svg {
+        width: 80px;
+    }
+    .navbar-top-default {
+        background: #202020;
+    }
+    .header-appear .navbar-top-default {
+        background: #202020;
+    }
+
+    /* Side Menu */
+    .side-menu {
+        width: 100%;
+    }
+    .side-footer p{
+        font-size: 12px;
+    }
+    .side-nav .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+    .side-menu .side-nav {
+        margin-bottom: 0;
+    }
+    .sidemenu_btn {
+        right: 10px;
+        margin-right: 0;
+    }
+    .side-menu .btn-close {
+        right: 15px;
+    }
+    .header-appear .navbar-top-default {
+        height: 75px;
+    }
+
+    /* Banner */
+    .area-heading h1 {
+        font-size: 38px;
+    }
+    .area-heading p {
+        font-size: 16px;
+    }
+    .slider-area {
+        display: block;
+        height: auto;
+    }
+    .author-skills {
+        position: relative;
+    }
+    .slider-image img {
+        top: 30px;
+    }
+    .slider-area .content-margin {
+        padding-top: 200px;
+        margin-bottom: 0;
+    }
+    .slider-image {
+         margin: 0;
+         top: 0;
+    }
+
+    /* About */
+    .about-heading .heading {
+        font-size: 34px;
+    }
+    .about-heading .info {
+        font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-sec .circular-wrap>div {
+        padding-bottom: 90px;
+    }
+    .stats-sec .circular-wrap>div:nth-child(3) {
+        padding-bottom: 0;
+    }
+    .circle canvas {
+        height: 160px!important;
+        width: 160px!important;
+    }
+    .stats-sec .circular-wrap p {
+        font-size: 16px;
+    }
+    .stats-sec .circular-wrap h4 {
+        font-size: 22px;
+    }
+
+    /* Portfolio */
+    .project-sec .project-area .project-detail .project-heading {
+        font-size: 28px;
+    }
+    .project-sec .project-area .project-detail .project-text {
+        font-size: 14px;
+    }
+    .project-sec .project-area .project-img {
+        height: auto;
+    }
+    .project-sec .project-area .project-detail {
+        position: relative;
+        transform: translateY(0%);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .portfolio {
+        padding-top: 6rem;
+    }
+    .project-sec .project-links-right a i, .project-sec .project-links-left a i {
+        display: none;
+    }
+    .project-sec .owl-item.active .project-area .project-detail .animate-fade{
+        animation: none;
+    }
+
+    /* Testimonials */
+    .owl-testimonial {
+        margin-top: 35px;
+    }
+    .heading-area .heading {
+        font-size: 34px;
+    }
+    .testimonial_img {
+        left: 37%;
+    }
+    #testimonials .text1 {
+        left: 32%;
+    }
+
+    /* Clients */
+    .clients-area .heading {
+        font-size: 34px;
+    }
+    .clients-area .sub-para {
+        font-size: 16px;
+    }
+
+    /* Contact */
+    .contact-sec {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 790px) {
+    /*Testimonial */
+    .testimonial_img {
+        position: absolute;
+        left: 43%;
+        top: 60%;
+    }
+
+    #testimonials .text1 {
+        position: absolute;
+        text-align: center;
+        top: 86%;
+        left: 40%;
+    }
+}

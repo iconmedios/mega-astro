@@ -1,0 +1,152 @@
+<section class="bg-red contact-sec" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 text-center">
+                <div class="user-img"><img src="creative-designer/images/contact-img.png" class="rounded-circle" alt="img"></div>
+                <h4 class="user-name">Morris Douglas</h4>
+                <p class="user-designation">email@website.com</p>
+                <div class="footer-social side-icons d-flex justify-content-center">
+                    <a class="social-icon" href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-icon" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
+                    <a class="social-icon" href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="javascript:void(0);"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12" id="result"></div>
+                    <div class="col-12 col-md-6">
+                        <form class="row contact-form row-padding" id="contact-form-data">
+                            <div class="col-12">
+                                <input type="text" name="userName" placeholder="Name" class="form-control">
+                                <input type="text" name="userPhone" placeholder="Contact No" class="form-control">
+                                <input type="email" name="userEmail" placeholder="Email" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6 contact-form">
+                        <textarea class="form-control" name="userMessage" rows="6" placeholder="Type Your Message Here"></textarea>
+                        <a href="javascript:void(0);" class="btn btn-medium btn-rounded btn-black rounded-pill w-100 contact_btn main-font">Let’s Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    /* ===================================
+      Contact Section
+====================================== */
+
+.contact-sec {
+    margin-bottom: 18rem;
+}
+
+.bg-tomate{
+    background: skyblue;
+}
+.contact-sec .user-img{
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.contact-sec .user-name{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.contact-sec .user-designation{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 14px 0 10px 0;
+}
+
+.footer-social a {
+    justify-content: center;
+    height: 40px;
+    line-height: 38px;
+    width: 40px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 2px;
+    border: 1px solid transparent;
+    transition: .3s ease;
+}
+
+.footer-social a:hover {
+    background: #ffffff;
+    color: #202020;
+    transition: .3s ease;
+}
+
+.contact-sec .contact-form input{
+    color: #ffffff;
+    font-size: 16px;
+    height: 40px;
+    padding: 34px 0;
+    background: transparent;
+}
+
+.contact-sec .contact-form .form-control{
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff!important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff!important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff!important;
+}
+
+.contact-sec .contact-form .form-control:focus, .contact-sec .contact-form textarea:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #040608;
+}
+
+.contact-sec .contact-form input::placeholder, .contact-sec .contact-form textarea::placeholder {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.contact-sec .contact-form textarea{
+    padding-top: 30px;
+    height: 160px;
+    color: #ffffff;
+    font-size: 16px;
+    resize: none;
+    background: transparent;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.contact_btn {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+</style>
